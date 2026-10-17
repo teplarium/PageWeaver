@@ -1,32 +1,61 @@
 # PageWeaver
 
-PageWeaver captures a full web page as one PNG or JPG image, or splits it into vertical sections for tools such as Figma.
+PageWeaver turns a website into a high-resolution image of its full scrollable page. It is made for designers who need a quick visual reference or want to bring a webpage into Figma without taking and stitching screenshots by hand.
 
-## Windows setup
+PageWeaver opens the page in Chromium at a viewport width you choose, then captures it at 2x scale. You can save the result as one tall image or as numbered vertical sections.
 
-1. Install Python 3 if it is not already installed. Enable **Add Python to PATH** during setup.
-2. Run **install.bat**. It installs Playwright and the Chromium browser.
-3. Run **PageWeaver.bat** and answer the prompts.
+## What it can do
 
-## Usage
+- Capture a website or a local HTML file.
+- Choose a viewport width in CSS pixels, such as 1440 for desktop or 390 for mobile.
+- Save as PNG or JPG.
+- Export the whole page as one image, or split it into numbered images up to 4000 output pixels tall each.
+- Save captures in a `screenshots` folder next to the app.
 
-When started without arguments, PageWeaver asks for the website URL (or local HTML file), viewport width, image format, and save mode.
+In split mode, each section continues where the previous one ends. The last section contains only the page content that remains, so it can be shorter than 4000 pixels.
 
-- **Single image** saves the entire page as one image.
-- **Split sections** creates a folder containing numbered images such as 1.png, 2.png, and 3.png. Each full section is up to 4000 output pixels tall. The final section contains only the remaining page content.
+## Requirements
 
-The width is entered in CSS pixels. Images are captured at 2x scale, so a 1440-pixel viewport produces an image 2880 pixels wide. The viewport keeps its normal height while the script captures sections of the full page.
+- Windows
+- Python 3
+- An internet connection for the initial installation of Playwright and Chromium
 
-Images are saved in a screenshots folder next to the app. Split mode creates a subfolder named after the corresponding full-image filename.
+## Install
 
-## Command-line examples
+1. Install Python 3 if needed. During setup, enable **Add Python to PATH**.
+2. Run `install.bat` and wait for it to finish installing the dependencies and Chromium.
+3. Run `PageWeaver.bat`.
 
-    python pageweaver.py https://example.com 1440 png full
-    python pageweaver.py https://example.com 1440 png split
-    python pageweaver.py https://example.com 390 jpg split
+## Use it
 
-Arguments are: website URL or HTML file path, viewport width, image format (png or jpg), and save mode (full or split). If the save mode is omitted, PageWeaver saves one image.
+Run `PageWeaver.bat` without arguments to answer the prompts for the URL or HTML file, viewport width, image format, and save mode. If you leave the URL blank, PageWeaver uses the Rome article on Wikipedia as an example.
+
+You can also run it from a terminal:
+
+```text
+python pageweaver.py <url-or-html-file> [width] [png|jpg] [full|split]
+```
+
+Examples:
+
+```text
+python pageweaver.py https://example.com 1440 png full
+python pageweaver.py https://example.com 1440 png split
+python pageweaver.py https://example.com 390 jpg split
+```
+
+The width is the browser viewport width in CSS pixels. Images are captured at 2x scale, so a 1440-pixel viewport produces an image that is 2880 pixels wide. The selected width also affects the website's responsive layout.
+
+- `full` saves one image of the entire page.
+- `split` saves a folder of numbered images, such as `1.png`, `2.png`, and `3.png`.
+- If the save mode is omitted, PageWeaver saves one full-page image.
+
+The same arguments can be passed to `PageWeaver.bat` on Windows.
+
+## Very long pages
+
+A single full-page image can require a lot of memory. Screenshot capture is allowed up to 90 seconds, but extremely tall pages may still fail if the browser or computer cannot process the image. For long pages, try split mode.
 
 ## License
 
-PageWeaver is licensed under the MIT License. See LICENSE.
+PageWeaver is licensed under the MIT License. See [LICENSE](LICENSE).

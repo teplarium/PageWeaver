@@ -108,7 +108,7 @@ def main():
                     **({"quality": 92} if fmt == "jpeg" else {}),
                 )
         else:
-            opts = {"path": str(file), "full_page": True, "type": fmt, "scale": "device"}
+            opts = {"path": str(file), "full_page": True, "type": fmt, "scale": "device", "timeout": 90000}
             if fmt == "jpeg":
                 opts["quality"] = 92
             page.screenshot(**opts)
