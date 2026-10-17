@@ -31,7 +31,7 @@ def main():
         fmt = (args[2] if len(args) > 2 else "png").lower()
         mode = (args[3] if len(args) > 3 else "full").lower()
     else:
-        url = ask("Website URL or path to an HTML file", "https://pro-enviro-site-1.vercel.app/")
+        url = ask("Website URL or path to an HTML file", "https://en.wikipedia.org/wiki/Rome")
         width = int(ask("Viewport width in CSS pixels (1440 desktop, 390 phone)", "1440"))
         fmt = ask("Image format: png or jpg", "png").lower()
         mode = ask("Save mode: 1 — single image, 2 — split into sections up to 4000 px", "1").lower()
