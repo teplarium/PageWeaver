@@ -1,0 +1,44 @@
+[    0.0s] PageWeaver diagnostics
+[    0.0s] URL: https://en.wikipedia.org/wiki/Japanese_conjugation
+[    0.1s] OS: Windows-11-10.0.26200-SP0; Python 3.14.8; CPU threads: 12; RAM: 31.9 GB total, 18.7 GB free (59%)
+[    0.1s] playwright 1.64.0
+[    0.2s] psutil 7.2.2
+[    0.2s] pyvips 3.2.0
+[    0.6s] Chromium 156.0.8078.4
+[    0.7s] 
+[    0.7s] T1. Exact PageWeaver run (split mode, program code unchanged), capped at 6 min of capturing
+[    7.4s]   opened in 6.6s
+[   29.5s]   prepare_page (scroll through whole page + network wait) took 22.1s; height 106,904 CSS px; browser RAM peak 769 MB, lowest free system RAM 57%
+[   29.5s]   fonts wait 0.0s
+[  209.5s]     capturing section 1: 180.0s; browser RAM peak 906 MB, lowest free system RAM 56%
+[  209.5s]   T1 TIMEOUT after 0 finished sections, 180.0s: Page.screenshot: Timeout 180000ms exceeded.
+[  209.5s]   browser RAM peak 906 MB, lowest free system RAM 56%
+[  224.5s]       page: (could not read page events: TimeoutError)
+[  224.6s] 
+[  224.6s] T2. PageWeaver-style section screenshots (full_page=True + clip), no scroll pass, JavaScript ON
+[  226.7s]   opened (domcontentloaded) in 1.9s
+[  227.3s]   network idle after 0.6s
+[  227.3s]   fonts ready after 0.0s
+[  227.3s]   page height 106,904 CSS px (= 213,808 px at 2x), 37,023 elements
+[  427.3s]   PageWeaver-style section at 0: TIMEOUT after 200.0s; browser RAM peak 1,118 MB, lowest free system RAM 55%
+[  442.3s]       page: (could not read page events: TimeoutError)
+[  442.4s] 
+[  442.4s] T3. PageWeaver-style section screenshots (full_page=True + clip), no scroll pass, JavaScript OFF
+[  444.3s]   opened (domcontentloaded) in 1.8s
+[  445.0s]   network idle after 0.7s
+[  445.1s]   fonts ready after 0.0s
+[  445.1s]   page height 108,417 CSS px (= 216,834 px at 2x), 36,883 elements
+[  645.1s]   PageWeaver-style section at 0: TIMEOUT after 200.0s; browser RAM peak 1,080 MB, lowest free system RAM 55%
+[  660.1s]       page: (could not read page events: TimeoutError)
+[  660.1s] 
+[  660.1s] T4. Alternative: viewport made 2000 px tall, page scrolled, normal (not full-page) screenshot
+[  662.8s]   opened (domcontentloaded) in 2.5s
+[  663.6s]   network idle after 0.8s
+[  663.6s]   fonts ready after 0.0s
+[  663.6s]   page height 106,904 CSS px (= 213,808 px at 2x), 37,023 elements
+[  664.4s]   viewport-style section at 0 (scrollY=0): OK after 0.5s; browser RAM peak 1,019 MB, lowest free system RAM 56%
+[  664.4s]       page: resize at 3345ms -> viewport 1440x2000
+[  665.3s]   viewport-style section at 60,000 (scrollY=60,000): OK after 0.6s; browser RAM peak 930 MB, lowest free system RAM 56%
+[  666.0s]   viewport-style section at 104,904 (scrollY=104,904): OK after 0.4s; browser RAM peak 1,049 MB, lowest free system RAM 56%
+[  666.2s] 
+[  666.2s] Finished. Results folder: D:\Apps from LLM\PageWeaver\_diagnostics\run_20261018_175630

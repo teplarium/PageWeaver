@@ -10,7 +10,7 @@ if errorlevel 1 (
     exit /b 1
 )
 
-echo Installing project dependencies...
+echo Installing Playwright, libvips, and memory-monitoring dependencies...
 python -m pip install --upgrade -r requirements.txt
 if errorlevel 1 goto install_error
 

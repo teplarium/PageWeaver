@@ -1,0 +1,43 @@
+2026-10-18T15:56:31.773Z pw:api navigating to "https://en.wikipedia.org/wiki/Japanese_conjugation", waiting until "domcontentloaded"
+2026-10-18T15:56:36.598Z pw:api   "commit" event fired
+2026-10-18T15:56:36.599Z pw:api   navigated to "https://en.wikipedia.org/wiki/Japanese_conjugation"
+2026-10-18T15:56:38.340Z pw:api   "domcontentloaded" event fired
+2026-10-18T15:56:40.024Z pw:api   "load" event fired
+2026-10-18T15:56:40.532Z pw:api   "networkidle" event fired
+2026-10-18T15:57:00.460Z pw:api taking page screenshot
+2026-10-18T15:57:00.479Z pw:api waiting for fonts to load...
+2026-10-18T15:57:00.481Z pw:api fonts loaded
+2026-10-18T16:00:15.677Z pw:api navigating to "https://en.wikipedia.org/wiki/Japanese_conjugation", waiting until "domcontentloaded"
+2026-10-18T16:00:15.871Z pw:api   "commit" event fired
+2026-10-18T16:00:15.871Z pw:api   navigated to "https://en.wikipedia.org/wiki/Japanese_conjugation"
+2026-10-18T16:00:17.606Z pw:api   "domcontentloaded" event fired
+2026-10-18T16:00:17.658Z pw:api   "load" event fired
+2026-10-18T16:00:18.168Z pw:api   "networkidle" event fired
+2026-10-18T16:00:18.200Z pw:api taking page screenshot
+2026-10-18T16:00:18.218Z pw:api waiting for fonts to load...
+2026-10-18T16:00:18.220Z pw:api fonts loaded
+2026-10-18T16:03:53.421Z pw:api navigating to "https://en.wikipedia.org/wiki/Japanese_conjugation", waiting until "domcontentloaded"
+2026-10-18T16:03:53.617Z pw:api   "commit" event fired
+2026-10-18T16:03:53.617Z pw:api   navigated to "https://en.wikipedia.org/wiki/Japanese_conjugation"
+2026-10-18T16:03:55.049Z pw:api   "networkidle" event fired
+2026-10-18T16:03:55.264Z pw:api   "domcontentloaded" event fired
+2026-10-18T16:03:55.457Z pw:api   "load" event fired
+2026-10-18T16:03:55.959Z pw:api   "networkidle" event fired
+2026-10-18T16:03:55.992Z pw:api taking page screenshot
+2026-10-18T16:03:56.011Z pw:api waiting for fonts to load...
+2026-10-18T16:03:56.017Z pw:api fonts loaded
+2026-10-18T16:07:31.198Z pw:api navigating to "https://en.wikipedia.org/wiki/Japanese_conjugation", waiting until "domcontentloaded"
+2026-10-18T16:07:32.045Z pw:api   "commit" event fired
+2026-10-18T16:07:32.045Z pw:api   navigated to "https://en.wikipedia.org/wiki/Japanese_conjugation"
+2026-10-18T16:07:33.723Z pw:api   "domcontentloaded" event fired
+2026-10-18T16:07:34.015Z pw:api   "load" event fired
+2026-10-18T16:07:34.488Z pw:api   "networkidle" event fired
+2026-10-18T16:07:34.854Z pw:api taking page screenshot
+2026-10-18T16:07:34.872Z pw:api waiting for fonts to load...
+2026-10-18T16:07:34.874Z pw:api fonts loaded
+2026-10-18T16:07:35.650Z pw:api taking page screenshot
+2026-10-18T16:07:35.659Z pw:api waiting for fonts to load...
+2026-10-18T16:07:35.660Z pw:api fonts loaded
+2026-10-18T16:07:36.582Z pw:api taking page screenshot
+2026-10-18T16:07:36.591Z pw:api waiting for fonts to load...
+2026-10-18T16:07:36.592Z pw:api fonts loaded
